@@ -8,7 +8,7 @@
    
    // Choose the order of the modules
     "modules-left": [
-        "custom/media"
+        "clock"
     ],
 
     "modules-center": [
@@ -18,7 +18,6 @@
         "pulseaudio",
         "network",
         "battery",
-        "clock",
         "custom/power"
     ],
 
@@ -39,8 +38,12 @@
 
     "clock": {
         "timezone": "Asia/Jakarta",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%d-%m-%Y}"
+	"format": "  {:%H:%M}"
+	//"calendar":{
+	//	"format":{
+	//		"today": "<b><u>{}</u></b>"
+	//	}
+	}
     },
     
     "battery": {
