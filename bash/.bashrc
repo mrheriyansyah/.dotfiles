@@ -16,6 +16,9 @@ PS1='[\u@\h \W]\$ '
 alias dotfiles='cd ~/.dotfiles'
 alias config='cd ~/.config'
 
+# Git commit & push
+alias commit='git commit -m'
+alias push='git push origin main'
 
 # ----------------------------------------------
 # AUTOSTARTS
