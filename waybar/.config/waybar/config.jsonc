@@ -28,24 +28,22 @@
          "warp-on-scroll": false,
          "format": "{icon}",
          "format-icons": {
-            "active": "",
+            "activei": "",
             "default": ""
          },
 	 "persistent-workspaces": {
 	    "*": [1,2,3]
 	 }
      },
-
-    "clock": {
-        "timezone": "Asia/Jakarta",
-	"format": "  {:%H:%M}"
-	//"calendar":{
-	//	"format":{
-	//		"today": "<b><u>{}</u></b>"
-	//	}
-	}
-    },
     
+     "clock": {
+     "interval": 1,
+     "timezone": "Asia/Jakarta",
+     "format": "  {:%H:%M}",
+     "tooltip": true,
+     "tooltip-format": "{:%A, %d-%m-%Y}"
+     },
+
     "battery": {
         "states": {
             "good": 95,
