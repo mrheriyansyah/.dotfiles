@@ -10,16 +10,24 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 # ----------------------------------------------
+# ALIASES
+# ----------------------------------------------
+
+alias dotfiles='cd ~/.dotfiles'
+alias config='cd ~/.config'
+
+
+# ----------------------------------------------
 # AUTOSTARTS
 # ----------------------------------------------
 
 # Start ssh-agent if not running
-if ! pgrep -u "$USER" ssh-agent > /dev/null; then
-    eval "$(ssh-agent -s)"
-fi
+#if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+#    eval "$(ssh-agent -s)"
+#fi
 
 # Add SSH key if not already added
-ssh-add -l >/dev/null 2>&1 || ssh-add ~/.ssh/id_rsa
+#ssh-add -l >/dev/null 2>&1 || ssh-add ~/.ssh/id_rsa
 
 # ----------------------------------------------
 # ENV VARIABLES
