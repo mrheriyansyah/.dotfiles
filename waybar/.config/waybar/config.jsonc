@@ -8,7 +8,8 @@
    
    // Choose the order of the modules
     "modules-left": [
-        "clock"
+        "clock",
+	"clock#date"
     ],
 
     "modules-center": [
@@ -38,11 +39,13 @@
      },
     
      "clock": {
-     "interval": 1,
+     "interval": 60,
      "timezone": "Asia/Jakarta",
-     "format": "  {:%H:%M}",
-     "tooltip": true,
-     "tooltip-format": "{:%A, %d-%m-%Y}"
+     "format": "  {:%H:%M}"
+     },
+
+     "clock#date": {
+	     "format": " {:%d-%m-%Y}"
      },
 
     "battery": {
