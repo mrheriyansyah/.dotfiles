@@ -18,6 +18,7 @@
     "modules-right": [
 	"bluetooth",
         "pulseaudio",
+	"backlight",
         "network",
         "battery",
         "custom/power"
@@ -49,6 +50,7 @@
      },
 
     "battery": {
+	"interval": 60,
         "states": {
             "good": 95,
             "warning": 30,
@@ -87,6 +89,11 @@
 	"format-connected": "on",
 	"format-disconnect": "off",
 	"on-click": "overskride"
+    },
+
+    "backlight": {
+	"format": "{icon} {percent}%",
+	"format-icons": ["󰃞", "󰃝", "󰃟", "󰃠"]
     },
     
     "custom/power": {
