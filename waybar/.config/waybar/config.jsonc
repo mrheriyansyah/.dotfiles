@@ -75,13 +75,15 @@
             "headphone": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "pwvucontrol"
     },
 
     "bluetooth": {
 	"format": " {status}",
 	"format-disabled": "", // an empty format will hide the module
-	"format-connected": " on"
+	"format-connected": "on",
+	"format-disconnect": "off",
+	"on-click": "overskride"
     },
     
     "custom/power": {
