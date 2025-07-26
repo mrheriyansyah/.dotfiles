@@ -42,7 +42,7 @@
      "clock": {
      "interval": 60,
      "timezone": "Asia/Jakarta",
-     "format": "  {:%H:%M}"
+     "format": " {:%H:%M}"
      },
 
      "clock#date": {
@@ -50,22 +50,22 @@
      },
 
     "battery": {
-	"interval": 60,
+	"interval": 1,
         "states": {
             "good": 95,
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
-        "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
+        "format": "{icon} {capacity}%",
+        "format-full": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
         "format-icons": ["", "", "", "", ""],
 	"tooltip-format-discharging": "{time}",
 	"tooltip-format-charging": "{timeTo}"
     },
    
     "network": {
-        "format-wifi": "{signalStrength}% ",
+        "format-wifi": " {signalStrength}%",
         "format-ethernet": "Connected ",
         "format-disconnected": "Disconnected ⚠",
         "tooltip-format-wifi": "{essid}"
@@ -84,7 +84,7 @@
     },
 
     "bluetooth": {
-	"format": " {status}",
+	"format": " {status}",
 	"format-disabled": "", // an empty format will hide the module
 	"format-connected": "on",
 	"format-disconnect": "off",
