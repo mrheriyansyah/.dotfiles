@@ -15,9 +15,14 @@ PS1='[\u@\h \W]\$ '
 
 alias dotfiles='cd ~/.dotfiles'
 alias config='cd ~/.config'
+
+# Edit config files
 alias hyprconf='nvim ~/.config/hypr/hyprland.conf'
+alias hlockconf='nvim ~/.config/hypr/hyprlock.conf'
+alias hidleconf='nvim ~/.config/hypr/hypridle.conf'
 alias waybarconf='nvim ~/.config/waybar/cofig.jsonc'
 alias waybarstyle='nvim ~/.config/waybar/style.css'
+alias bashconf='nvim ~/.bashrc'
 
 # Git commit & push
 alias commit='git commit -m'
