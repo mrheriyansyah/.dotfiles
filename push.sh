@@ -34,7 +34,7 @@ elif [ $CHOOSE == 7 ]; then
 elif [ $CHOOSE == 8 ]; then
 	git add waybar/.config/waybar/style.css
 elif [ $CHOOSE == 9 ]; then
-	git add waybar/.config/waypaper/config.ini
+	git add waypaper/.config/waypaper/config.ini
 elif [ $CHOOSE == 10 ]; then
 	git add wlogout/.config/wlogout/layout
 elif [ $CHOOSE == 11 ]; then
