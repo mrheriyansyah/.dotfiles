@@ -24,9 +24,8 @@ alias waybarconf='nvim ~/.config/waybar/cofig.jsonc'
 alias waybarstyle='nvim ~/.config/waybar/style.css'
 alias bashconf='nvim ~/.bashrc'
 
-# Git commit & push
-alias commit='git commit -m'
-alias push='git push origin main'
+# Git add commit push automation
+alias push='sh push.sh'
 
 # ----------------------------------------------
 # AUTOSTARTS
