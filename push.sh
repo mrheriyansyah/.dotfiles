@@ -2,6 +2,11 @@
 
 REPEAT=y
 
+echo "======================================================================="
+echo ""
+figlet -l -f 3d.flf "GIT AUTOMATION" | lolcat
+echo ''
+echo "======================================================================="
 while  [ $REPEAT == y ]
 do
 	echo ""
@@ -57,7 +62,7 @@ do
 
 	# Asking for the loop
 	echo ""
-	read -p "Want to add more file? y/n" REPEAT
+	read -p "Want to add more file? y/n : " REPEAT
 
 	#Checking the answer
 	if [[ $REPEAT != y && $REPEAT != n ]]; then
