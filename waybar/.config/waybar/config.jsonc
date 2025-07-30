@@ -13,8 +13,11 @@
     ],
 
     "modules-center": [
-       	"hyprland/workspaces"
+        "group/wallpaper",
+       	"hyprland/workspaces",
+        "custom/notif"
     ],
+
     "modules-right": [
 	"bluetooth",
         "pulseaudio",
@@ -101,5 +104,39 @@
     "custom/power": {
         "format" : "⏻",
 	"on-click" : "wlogout"
+    },
+
+    "group/wallpaper": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": "500",
+            "transition-left-to-right": "true"
+        },
+        "modules": [
+            "custom/swww",
+            "custom/random",
+            "custom/pick"
+        ]
+
+    },
+
+    "custom/swww": {
+        "format": "",
+        "tooltip": "true",
+        "tooltip-format": "Change wallpaper"
+    },
+
+    "custom/random": {
+        "format": "",
+        "tooltip": "true",
+        "tooltip-format": "Random",
+        "on-click": "waypaper --random"
+    },
+
+    "custom/pick": {
+        "format": "",
+        "tooltip": "true",
+        "tooltip-format": "Pick",
+        "on-click": "waypaper"
     }
 }
