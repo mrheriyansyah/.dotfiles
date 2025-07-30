@@ -6,7 +6,8 @@ while  [ $REPEAT == y ]
 do
 	echo ""
 	echo "Which file you want to push to GitHub?"
-	echo "[01] - Bash"
+	echo ""
+    echo "[01] - Bash"
 	echo "[02] - Hypridle"
 	echo "[03] - Hyprland"
 	echo "[04] - Hyprlock"
@@ -18,8 +19,7 @@ do
 	echo "[10] - Wlogout - Layout"
 	echo "[11] - Wlogout - Style"
 	echo ""
-	echo "Choose :"
-	read CHOOSE
+	read -p "Choose : " CHOOSE
 
 	# Add a files based on the choosen option
 	if [ $CHOOSE == 1 ]; then
@@ -46,26 +46,28 @@ do
 		git add wlogout/.config/wlogout/style.css
 	else
 		echo "That's not an option!"
+        # Restore added files
+        git restore --staged .
 		exit 1
 	fi
-	
+
+	# Commiting with message
+    echo ""
+    read -p "Commit message : " MESSAGE
+    git commit -m "$MESSAGE"
+
 	# Asking for the loop
 	echo ""
-	echo "Want to add more file? y/n"
-	read REPEAT
+	read -p "Want to add more file? y/n" REPEAT
 
 	#Checking the answer
 	if [[ $REPEAT != y && $REPEAT != n ]]; then
 		echo "Don't be joking around!"
-		exit 1
+        # Restore added files
+        git restore --staged .
+        exit 1
 	fi
 done
-
-# Commiting with message
-echo ""
-echo "Message : "
-read MESSAGE
-git commit -m "$MESSAGE"
 
 # Push to main branch
 git push origin main
