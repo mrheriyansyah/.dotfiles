@@ -31,7 +31,7 @@ do
 	elif [ $CHOOSE == 4 ]; then
 		git add hypr/.config/hypr/hyprlock.conf
 	elif [ $CHOOSE == 5 ]; then
-		git add nvim/.config/nvim/init.lua
+		git add nvim/.config/nvim/
 	elif [ $CHOOSE == 6 ]; then
 		git add push.sh
 	elif [ $CHOOSE == 7 ]; then
