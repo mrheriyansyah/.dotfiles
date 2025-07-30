@@ -52,7 +52,6 @@ do
 	fi
 
 	# Commiting with message
-    echo ""
     read -p "Commit message : " MESSAGE
     git commit -m "$MESSAGE"
 
