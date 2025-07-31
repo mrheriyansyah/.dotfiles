@@ -2,9 +2,8 @@
 {
     "layer": "top",	// Waybar at top layer
     "position": "top",	// Waybar position (top|bottom|left|right)
-    "height": 30,	// Waybar height (to be removed for auto height)
-    "spacing": 4,	// Gaps between modules (4px)
-    "margin-top": 3,
+    "height": 20,	// Waybar height (to be removed for auto height)
+    "spacing": 10,	// Gaps between modules (4px)
    
    // Choose the order of the modules
     "modules-left": [
@@ -19,9 +18,8 @@
     ],
 
     "modules-right": [
-	"bluetooth",
         "pulseaudio",
-	"backlight",
+	    "backlight",
         "network",
         "battery",
         "custom/power"
@@ -77,10 +75,8 @@
     },
 
     "pulseaudio": {
-        "format": "{volume}% {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
+        "format": "{icon} {volume}%",
+        "format-muted": " ",
         "format-icons": {
             "headphone": "",
             "default": ["", "", ""]
@@ -88,13 +84,13 @@
         "on-click": "pwvucontrol"
     },
 
-    "bluetooth": {
-	"format": " {status}",
-	"format-disabled": "", // an empty format will hide the module
-	"format-connected": "on",
-	"format-disconnect": "off",
-	"on-click": "overskride"
-    },
+    //"bluetooth": {
+	//"format": "<span color='#1d4ed8'>  </span>",
+	//"format-disabled": "", // an empty format will hide the module
+	//"format-connected": "<span color='#1d4ed8'>  </span>",
+	//"format-disconnect": "off",
+	//"on-click": "overskride"
+    //},
 
     "backlight": {
 	"format": "{icon} {percent}%",
