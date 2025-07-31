@@ -20,7 +20,7 @@ alias config='cd ~/.config'
 alias hyprconf='nvim ~/.config/hypr/hyprland.conf'
 alias hlockconf='nvim ~/.config/hypr/hyprlock.conf'
 alias hidleconf='nvim ~/.config/hypr/hypridle.conf'
-alias waybarconf='nvim ~/.config/waybar/cofig.jsonc'
+alias waybarconf='nvim ~/.config/waybar/config.jsonc'
 alias waybarstyle='nvim ~/.config/waybar/style.css'
 alias bashconf='nvim ~/.bashrc'
 
