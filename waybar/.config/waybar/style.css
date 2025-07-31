@@ -1,21 +1,18 @@
 * {
 	font-family: "JetBrainsMono Nerd Font Propo";
-	font-size: 13px;
+	font-size: 12px;
 	font-weight: bold;
-	color: #dcdfe1;
-	border: none;
-	border-radius: 0;
+    color: #cbd5e1;
 }
 
 /*WAYBAR*/
 
-window#waybar {
+#waybar {
 	background-color: transparent;
 }
 
 .modules-right {
 	margin-right: 10px;
-	background-color : rgba(255, 255, 255, 0);
 }
 
 .modules-left {
@@ -23,18 +20,16 @@ window#waybar {
 }
 
 .modules-center {
-	background-color: rgba (15,27,53,0.9);
-	padding: 0px 10px;
-	margin: 5px 0px;
-	border-radius: 10px;
 }
 
-label.module {
-	padding: 10px 10px;
+.module {
 }
+
+/*label.module {
+    color: #cbd5e1;
+}*/
 
 button.module {
-	
 }
 
 /*ANIMATION*/
@@ -49,31 +44,18 @@ button.module {
 /*WORKSPACES*/
 
 #workspace {
-	background-color: #1d202e;
-	margin: 5px 0;
-	border-radius: 2px;
 }
 
 #workspaces button {
-    padding: 2px 2px;
-    color: #fff;
 }
 
 #workspaces button:hover {
-	background-color: #7dcfff;
-	color: #24283b;
-	border-radius: 2px;
 }
 
 #workspaces button.focused {
-	color: #24283b;
-	background-color: #7aa2f7;
-	border-radius: 2px;
-	/*box-shadow: inset 0 -3px #ffffff;*/
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -88,10 +70,8 @@ button.module {
 
 #clock,
 #clock.date {
-	background-color: rgba (15,27,53,0.9);
-	padding: 0px 10px;
-	margin: 5px 0px;
-	border-radius: 10px;
+    background: rgba(15,27,53,1);
+    margin: 20 2;
 }
 
 #bluetooth,
@@ -100,11 +80,6 @@ button.module {
 #custom-power,
 #pulseaudio,
 #battery {
-	background-color: rgba (15,27,53,0.9);
-	padding: 0px 10px;
-	margin: 5px 0px;
-	border-radius: 10px;
-	border-width: 0px;
 }
 
 #battery.charging {
