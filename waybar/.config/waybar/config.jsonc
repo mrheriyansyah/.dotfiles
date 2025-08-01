@@ -2,18 +2,19 @@
 {
     "layer": "top",	// Waybar at top layer
     "position": "top",	// Waybar position (top|bottom|left|right)
-    "height": 20,	// Waybar height (to be removed for auto height)
-    "spacing": 10,	// Gaps between modules (4px)
+    "height": "auto",	// Waybar height (to be removed for auto height)
+    "spacing": 5,	// Gaps between modules (4px)
    
    // Choose the order of the modules
     "modules-left": [
         "clock",
-	"clock#date"
+	"clock#date",
+    "group/wallpaper"
     ],
 
     "modules-center": [
-        "group/wallpaper",
-       	"hyprland/workspaces",
+        //"group/wallpaper",
+       	//"hyprland/workspaces",
         "custom/notif"
     ],
 
