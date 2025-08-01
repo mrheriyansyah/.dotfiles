@@ -10,23 +10,17 @@ echo "======================================================================="
 while  [ $REPEAT == y ]
 do
 	echo ""
-	echo "Which file you want to push to GitHub?"
+	echo "Which config you want to push to GitHub?"
 	echo ""
-    echo "[01] - Bash"
-	echo "[02] - Hypridle"
-	echo "[03] - Hyprland"
-	echo "[04] - Hyprlock"
-	echo "[05] - NVIM"
-	echo "[06] - Push.sh"
-	echo "[07] - Waybar - Config"
-	echo "[08] - Waybar - Style"
-	echo "[09] - Waypaper"
-	echo "[10] - Wlogout - Layout"
-	echo "[11] - Wlogout - Style"
+    echo "[01] - Bash     |[06] - Push.sh          | [11] - Wlogout - Style"
+	echo "[02] - Hypridle |[07] - Waybar - Config  |"
+	echo "[03] - Hyprland |[[08] - Waybar - Style  |"
+	echo "[04] - Hyprlock |[09] - Waypaper         |"
+	echo "[05] - NVIM     |[10] - Wlogout - Layout |"
 	echo ""
 	read -p "Choose : " CHOOSE
 
-	# Add a files based on the choosen option
+	# Add a config file based on the choosen option
 	if [ $CHOOSE == 1 ]; then
 		git add bash/.bashrc
 	elif [ $CHOOSE == 2 ]; then
@@ -57,7 +51,7 @@ do
 	fi
 
 	# Commiting with message
-    read -p "Commit message : " MESSAGE
+    read -p "Commit's message : " MESSAGE
     git commit -m "$MESSAGE"
 
 	# Asking for the loop
