@@ -17,11 +17,11 @@ alias dotfiles='cd ~/.dotfiles'
 alias config='cd ~/.config'
 
 # Edit config files
-alias hyprconf='nvim ~/.config/hypr/hyprland.conf'
+alias hconf='nvim ~/.config/hypr/hyprland.conf'
 alias hlockconf='nvim ~/.config/hypr/hyprlock.conf'
 alias hidleconf='nvim ~/.config/hypr/hypridle.conf'
-alias waybarconf='nvim ~/.config/waybar/config.jsonc'
-alias waybarstyle='nvim ~/.config/waybar/style.css'
+alias barconf='nvim ~/.config/waybar/config.jsonc'
+alias barstyle='nvim ~/.config/waybar/style.css'
 alias bashconf='nvim ~/.bashrc'
 
 # Git add commit push automation
