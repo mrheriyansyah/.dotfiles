@@ -23,6 +23,8 @@ alias hidleconf='nvim ~/.config/hypr/hypridle.conf'
 alias barconf='nvim ~/.config/waybar/config.jsonc'
 alias barstyle='nvim ~/.config/waybar/style.css'
 alias bashconf='nvim ~/.bashrc'
+alias wlogconf='nvim ~/.config/wlogout/layout'
+alias wlogstyle='nvim ~/.config/wlogout/style.css'
 
 # Git add commit push automation
 alias push='sh push.sh'
