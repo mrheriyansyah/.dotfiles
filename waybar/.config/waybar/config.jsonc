@@ -61,16 +61,22 @@
         "format": "{icon} {capacity}%",
         "format-full": "{icon} {capacity}%",
         "format-charging": " {capacity}%",
-        "format-icons": ["", "", "", "", ""],
+        "format-icons": [
+            "<span color='#dc2626'></span>",
+            "<span color='#fcd34d'></span>",
+            "<span color='#34d399'></span>",
+            "<span color='#34d399'></span>",
+            "<span color='#34d399'></span>"
+        ],
 	"tooltip-format-discharging": "{time}",
 	"tooltip-format-charging": "{timeTo}"
     },
    
     "network": {
-        "format-wifi": " {signaldBm}dBm",
-        "format-ethernet": "󰈀 LAN",
-        "format-disconnected": "󱞐 Disconected",
-	"format-disable": "󰜺 Off",
+        "format-wifi": "<span color='#3b82f6'></span> {signaldBm}dBm",
+        "format-ethernet": "<span color='#4ade80'>󰈀</span> LAN",
+        "format-disconnected": "<span color='#dc2626'>󱞐</span> Disconected",
+	    "format-disable": "<span color='#dc2626'>󰜺</span> Off",
         "tooltip-format-wifi": "{essid}",
 	"tooltip-format-ethernet": "{ipaddr}"
     },
@@ -95,7 +101,12 @@
 
     "backlight": {
 	"format": "{icon} {percent}%",
-	"format-icons": ["󰃞", "󰃝", "󰃟", "󰃠"]
+	"format-icons": [
+        "<span color='#fde047'>󰃞</span>",
+        "<span color='#fde047'>󰃝</span>",
+        "<span color='#fde047'>󰃟</span>",
+        "<span color='#fde047'>󰃠</span>"
+    ]
     },
     
     "custom/power": {
