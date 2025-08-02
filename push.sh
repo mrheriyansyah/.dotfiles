@@ -14,7 +14,7 @@ do
 	echo ""
     echo "[01] - Bash     |[06] - Push.sh          | [11] - Wlogout - Style"
 	echo "[02] - Hypridle |[07] - Waybar - Config  |"
-	echo "[03] - Hyprland |[[08] - Waybar - Style  |"
+	echo "[03] - Hyprland |[08] - Waybar - Style   |"
 	echo "[04] - Hyprlock |[09] - Waypaper         |"
 	echo "[05] - NVIM     |[10] - Wlogout - Layout |"
 	echo ""
