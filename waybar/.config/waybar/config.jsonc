@@ -1,21 +1,21 @@
 // -*- mode: jsonc -*-
 {
-    "layer": "top",	// Waybar at top layer
+    "layer": "bottom",	// Waybar at top layer
     "position": "top",	// Waybar position (top|bottom|left|right)
-    "height": "auto",	// Waybar height (to be removed for auto height)
+    "height": "",	// Waybar height (to be removed for auto height)
     "spacing": 5,	// Gaps between modules (4px)
+    "margin-top": 4,
    
    // Choose the order of the modules
     "modules-left": [
         "clock",
-	"clock#date",
-    "group/wallpaper"
+	"clock#date"
     ],
 
     "modules-center": [
-        //"group/wallpaper",
-       	"hyprland/workspaces",
-        "custom/notif"
+        //"group/wallpaper"
+       	"hyprland/workspaces"
+        //"custom/notif"
     ],
 
     "modules-right": [
