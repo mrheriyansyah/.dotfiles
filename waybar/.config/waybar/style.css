@@ -2,6 +2,7 @@
 	font-family: "JetBrainsMono Nerd Font Propo";
 	font-size: 12px;
 	font-weight: bold;
+    min-height: 0px;
 }
 
 /*WAYBAR*/
@@ -20,13 +21,6 @@
     color: #cbd5e1;
 }
 
-.modules-center {
-}
-
-.module {
-    margin-top: 5px;
-}
-
 /*ANIMATION*/
 
 @keyframes blink {
@@ -39,18 +33,17 @@
 /*WORKSPACES*/
 
 #workspaces {
-    background: none;
+    background: #0f1b35;
+    border-radius: 10px;
 }
 
 #workspaces button {
-    margin: 8px 0px;
-    padding: 0px 8px;
     border-radius: 10px;
 }
 
 #workspaces button:hover {
     background-color: #444444;
-    color: #323d49;
+    color: #e8eaed;
 }
 
 #workspaces button.urgent {
@@ -60,6 +53,11 @@
 #workspaces button.active {
     background-color: #283250;
     color: #e8eaed;
+}
+
+#workspaces button.active.empty {
+    background-color: #283250;
+    color: #212d49;
 }
 
 #workspaces button.empty {
@@ -72,22 +70,12 @@
     color: #e8eaed;
 }
 
-/* If workspaces is the leftmost module, omit left margin */
-/*.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
-}*/
-
-/* If workspaces is the rightmost module, omit right margin */
-/*.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
-}*/
-
 #clock,
 #clock.date {
     background-color: rgb(15,27,53);
-    margin: 8px 0px;
+    border-radius: 50px;
     padding: 0px 8px;
-    border-radius: 10px;
+    margin: 10px 0px;
 }
 
 #backlight,
@@ -96,13 +84,13 @@
 #pulseaudio,
 #battery {
     background-color: rgb(15,27,53);
-    margin: 8px 0px;
     padding: 0px 8px;
+    margin: 10px 0px;
     border-radius: 10px;
 }
 
 #battery.charging {
-    color: #9ece6a;
+    color: #34d399;
 }
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
@@ -116,20 +104,14 @@
     animation-direction: alternate;
 }
 
-#custom-swww {
-    margin: 9px 0px;
-    padding: 0px 5px;
+/*#custom-swww {
     border-radius: 10px;
 }
 
 #custom-random {
-    margin: 9px 0px;
-    padding: 0px 5px;
     border-radius: 10px;
 }
 
 #custom-pick {
-    margin: 9px 0px;
-    padding: 0px 5px;
     border-radius: 10px;
-}
+}*/
