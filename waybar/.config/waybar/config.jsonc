@@ -14,7 +14,7 @@
 
     "modules-center": [
         //"group/wallpaper",
-       	//"hyprland/workspaces",
+       	"hyprland/workspaces",
         "custom/notif"
     ],
 
@@ -44,11 +44,13 @@
      "clock": {
      "interval": 60,
      "timezone": "Asia/Jakarta",
-     "format": " {:%H:%M}"
+     "format": "<span color='#7c3aed'></span> {:%H:%M}",
+     "tooltip": false
      },
 
      "clock#date": {
-	     "format": " {:%d-%m-%Y}"
+        "format": "<span color='#7c3aed'></span> {:%d-%m-%Y}",
+        "tooltip": false
      },
 
     "battery": {
@@ -60,7 +62,7 @@
         },
         "format": "{icon} {capacity}%",
         "format-full": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
+        "format-charging": "<span color='#34d399'></span> {capacity}%",
         "format-icons": [
             "<span color='#dc2626'></span>",
             "<span color='#fcd34d'></span>",
@@ -86,7 +88,11 @@
         "format-muted": " ",
         "format-icons": {
             "headphone": "",
-            "default": ["", "", ""]
+            "default": [
+                "<span color='#f43f5e'></span>",
+                "<span color='#f43f5e'></span>",
+                "<span color='#f43f5e'></span>"
+            ]
         },
         "on-click": "pwvucontrol"
     },
@@ -146,5 +152,12 @@
         "tooltip": "true",
         "tooltip-format": "Pick",
         "on-click": "waypaper"
+    },
+
+    "hyprland/workspaces": {
+	"format": "{name}",
+    "persistent-workspaces": {
+        "*": [1,2,3] 
     }
+}
 }
