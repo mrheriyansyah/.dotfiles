@@ -2,36 +2,29 @@
 	font-family: "JetBrainsMono Nerd Font Propo";
 	font-size: 12px;
 	font-weight: bold;
-    color: #cbd5e1;
 }
 
 /*WAYBAR*/
 
 #waybar {
 	background-color: transparent;
-    /*background: rgb(255,0,0);*/
 }
 
 .modules-right {
 	margin-right: 10px;
+    color: #cbd5e1;
 }
 
 .modules-left {
 	margin-left: 10px;
+    color: #cbd5e1;
 }
 
 .modules-center {
 }
 
 .module {
-    background: rgb(15,27,53);
     margin-top: 5px;
-}
-
-/*label.module {
-    color: #cbd5e1;
-}*/
-button.module {
 }
 
 /*ANIMATION*/
@@ -45,22 +38,38 @@ button.module {
 
 /*WORKSPACES*/
 
-#workspace {
-    margin: 9 0;
-    padding: 0 5;
-    border-radius: 10;
+#workspaces {
+    background: none;
 }
 
 #workspaces button {
+    margin: 8px 0px;
+    padding: 0px 8px;
+    border-radius: 10px;
 }
 
 #workspaces button:hover {
-}
-
-#workspaces button.focused {
+    background-color: #444444;
+    color: #323d49;
 }
 
 #workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#workspaces button.active {
+    background-color: #283250;
+    color: #e8eaed;
+}
+
+#workspaces button.empty {
+    background-color: #0f1b35;
+    color: #323d49;
+}
+
+#workspaces button:not(.active):not(.empty) {
+    background-color: #0f1b35;
+    color: #e8eaed;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -75,20 +84,21 @@ button.module {
 
 #clock,
 #clock.date {
-    margin: 9 0;
-    padding: 0 5;
-    border-radius: 10;
+    background-color: rgb(15,27,53);
+    margin: 8px 0px;
+    padding: 0px 8px;
+    border-radius: 10px;
 }
 
-#bluetooth,
 #backlight,
 #network,
 #custom-power,
 #pulseaudio,
 #battery {
-    margin: 9 0;
-    padding: 0 5;
-    border-radius: 10;
+    background-color: rgb(15,27,53);
+    margin: 8px 0px;
+    padding: 0px 8px;
+    border-radius: 10px;
 }
 
 #battery.charging {
@@ -107,19 +117,19 @@ button.module {
 }
 
 #custom-swww {
-margin: 9 0;
-    padding: 0 5;
-    border-radius: 10;
+    margin: 9px 0px;
+    padding: 0px 5px;
+    border-radius: 10px;
 }
 
 #custom-random {
-margin: 9 0;
-    padding: 0 5;
-    border-radius: 10;
+    margin: 9px 0px;
+    padding: 0px 5px;
+    border-radius: 10px;
 }
 
 #custom-pick {
-margin: 9 0;
-    padding: 0 5;
-    border-radius: 10;
+    margin: 9px 0px;
+    padding: 0px 5px;
+    border-radius: 10px;
 }
