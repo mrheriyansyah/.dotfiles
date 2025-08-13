@@ -25,6 +25,7 @@ alias barstyle='nvim ~/.config/waybar/style.css'
 alias bashconf='nvim ~/.bashrc'
 alias wlogconf='nvim ~/.config/wlogout/layout'
 alias wlogstyle='nvim ~/.config/wlogout/style.css'
+alias fetchconf='nvim ~/.config/fastfetch/config.jsonc'
 
 # Git add commit push automation
 alias push='sh push.sh'
