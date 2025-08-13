@@ -1,6 +1,5 @@
-// -*- mode: jsonc -*-
 {
-    "layer": "bottom",	// Waybar at top layer
+    "layer": "top",	// Waybar at top layer
     "position": "top",	// Waybar position (top|bottom|left|right)
     "height": "",	// Waybar height (to be removed for auto height)
     "spacing": 5,	// Gaps between modules (4px)
@@ -9,18 +8,19 @@
    // Choose the order of the modules
     "modules-left": [
         "clock",
-	"clock#date"
+        "clock#date"
     ],
 
     "modules-center": [
-        //"group/wallpaper"
+        //"group/wallpaper",
        	"hyprland/workspaces"
         //"custom/notif"
     ],
 
+
     "modules-right": [
         "pulseaudio",
-	    "backlight",
+        "backlight",
         "network",
         "battery",
         "custom/power"
@@ -28,17 +28,10 @@
 
     // Modules configuration
      "hyprland/workspaces": {
-         "disable-scroll": true,
-         "all-outputs": true,
-         "warp-on-scroll": false,
-         "format": "{icon}",
-         "format-icons": {
-            "active": "",
-            "default": ""
-         },
-	 "persistent-workspaces": {
-	    "*": [1,2,3]
-	 }
+         "format": "{name}",
+         "persistent-workspaces": {
+            "*": [1,2,3]
+         }
      },
     
      "clock": {
@@ -97,13 +90,6 @@
         "on-click": "pwvucontrol"
     },
 
-    //"bluetooth": {
-	//"format": "<span color='#1d4ed8'>  </span>",
-	//"format-disabled": "", // an empty format will hide the module
-	//"format-connected": "<span color='#1d4ed8'>  </span>",
-	//"format-disconnect": "off",
-	//"on-click": "overskride"
-    //},
 
     "backlight": {
 	"format": "{icon} {percent}%",
@@ -152,12 +138,5 @@
         "tooltip": "true",
         "tooltip-format": "Pick",
         "on-click": "waypaper"
-    },
-
-    "hyprland/workspaces": {
-	"format": "{name}",
-    "persistent-workspaces": {
-        "*": [1,2,3] 
     }
-}
 }
