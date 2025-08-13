@@ -12,13 +12,14 @@
 }
 
 .modules-right {
-	margin-right: 10px;
     color: #cbd5e1;
 }
 
 .modules-left {
-	margin-left: 10px;
     color: #cbd5e1;
+}
+
+.modules-center {
 }
 
 /*ANIMATION*/
@@ -35,6 +36,7 @@
 #workspaces {
     background: #0f1b35;
     border-radius: 10px;
+    margin: 5px 0px
 }
 
 #workspaces button {
@@ -53,6 +55,7 @@
 #workspaces button.active {
     background-color: #283250;
     color: #e8eaed;
+    padding: 0px 20px;
 }
 
 #workspaces button.active.empty {
@@ -74,8 +77,8 @@
 #clock.date {
     background-color: rgb(15,27,53);
     border-radius: 50px;
-    padding: 6px 8px;
-    margin: 10px 0px;
+    padding: 0px 8px;
+    margin: 5px 0px;
 }
 
 #backlight,
@@ -84,8 +87,8 @@
 #pulseaudio,
 #battery {
     background-color: rgb(15,27,53);
-    padding: 6px 8px;
-    margin: 10px 0px;
+    padding: 0px 8px;
+    margin: 5px 0px;
     border-radius: 50px;
 }
 
