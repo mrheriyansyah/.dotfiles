@@ -109,18 +109,19 @@
 
 #custom-swww {
     background-color: rgb(15,27,53);
-    border-radius: 50px;
+    border-radius: 10px;
     padding: 6px 8px;
 }
 
 #custom-random {
     background-color: rgb(15,27,53);
-    border-radius: 50px;
+    border-radius: 10px;
     padding: 6px 8px;
+    margin: 0px 5px;
 }
 
 #custom-pick {
     background-color: rgb(15,27,53);
     padding: 6px 8px;
-    border-radius: 50px;
+    border-radius: 10px;
 }
