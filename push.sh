@@ -2,6 +2,7 @@
 
 REPEAT=y
 
+clear
 echo "======================================================================="
 echo ""
 figlet -l -f 3d.flf "GIT AUTOMATION" | lolcat
