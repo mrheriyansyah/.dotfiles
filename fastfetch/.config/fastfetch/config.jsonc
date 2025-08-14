@@ -1,0 +1,120 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "logo": {
+      "source": "~/.config/fastfetch/neptune.png",
+      "type": "kitty",
+      "width": 30,
+      "padding": {
+        "top": 2,
+        "left": 2
+      }
+  },
+
+    "display": {
+        "separator": "",
+        "key": {
+            "width": 15,
+            "type": "string"
+        },
+        "percent": {
+            "type": 9,
+            "color": {
+                "green": "green",
+                "yellow": "light_yellow",
+                "red": "light_red"
+            }
+        }
+    },
+
+  "modules": [
+      "break",
+      "break",
+      "break",
+
+    {
+        "type": "custom",
+        "format": "System Information"
+    },
+
+    {
+        "type": "title",
+        "key": " User",
+        "format": "{user-name}"
+    },
+
+    {
+        "type": "title",
+        "key": "󰍹 Host",
+        "format": "{host-name}"
+    },
+
+    {
+        "type": "os",
+        "key": "󰣇 Os",
+        "format": "{pretty-name}"
+    },
+
+    {
+        "type": "packages",
+        "key": "󰏖 Packages",
+        "format": "{pacman} (Pacman) "
+    },
+
+    {
+        "type": "uptime",
+        "key": " Uptime",
+        "format": "{formatted}"
+    },
+    "break",
+    {
+        "type": "custom",
+        "format": "Environment"
+    },
+
+    {
+        "type": "wm",
+        "key": "󱂬 WM",
+        "format": "{pretty-name}"
+    },
+
+    {
+        "type": "terminal",
+        "key": " Terminal",
+        "format": "{pretty-name}"
+    },
+
+    {
+        "type": "shell",
+        "key": " Shell",
+        "format": "{pretty-name}"
+    },
+    "break",
+    {
+        "type": "custom",
+        "format": "Hardware"
+    },
+
+    {
+        "type": "cpu",
+        "key": "󰻠 CPU",
+        "format": "{name} - {3} Core, {4} threads"
+    },
+    {
+        "type": "gpu",
+        "key": "󰢮 GPU",
+        "format": "{vendor} Radeon Vega 7 [Integrated]"
+    },
+    {
+        "type": "memory",
+        "key": "󰍛 Memory",
+        "format": "{2} ({3})"
+    },
+    {
+        "type": "disk",
+        "key": "󰋊 Storage",
+        "format": "{2} ({3})"
+    },
+    "separator"
+  ]
+}
