@@ -14,8 +14,8 @@ do
 	echo "Which config you want to push to GitHub?"
 	echo ""
     echo "[01] - Bash     |[06] - Push.sh          | [11] - Wlogout - Style"
-	echo "[02] - Hypridle |[07] - Waybar - Config  |"
-	echo "[03] - Hyprland |[08] - Waybar - Style   |"
+    echo "[02] - Hypridle |[07] - Waybar (Config)  | [12] - Fastfetch (Config)"
+    echo "[03] - Hyprland |[08] - Waybar (Style)   | [13] - Fastfetch (Logo)"
 	echo "[04] - Hyprlock |[09] - Waypaper         |"
 	echo "[05] - NVIM     |[10] - Wlogout - Layout |"
 	echo ""
@@ -44,6 +44,10 @@ do
 		git add wlogout/.config/wlogout/layout
 	elif [ $CHOOSE == 11 ]; then
 		git add wlogout/.config/wlogout/style.css
+	elif [ $CHOOSE == 12 ]; then
+		git add fastfetch/.config/fastfetch/config.jsonc
+	elif [ $CHOOSE == 13 ]; then
+		git add fastfetch/.config/fastfetch/logo.png
 	else
 		echo "That's not an option!"
         # Restore added files
