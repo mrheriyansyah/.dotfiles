@@ -8,7 +8,8 @@
    // Choose the order of the modules
     "modules-left": [
         "clock",
-        "clock#date"
+        "clock#date",
+        "group/wallpaper"
     ],
 
     "modules-center": [
@@ -78,7 +79,7 @@
 
     "pulseaudio": {
         "format": "{icon} {volume}%",
-        "format-muted": " ",
+        "format-muted": "<span color='#f43f5e'>󰝟</span>",
         "format-icons": {
             "headphone": "",
             "default": [
