@@ -16,7 +16,7 @@ do
     echo "[01] - Bash     |[06] - Push.sh          | [11] - Wlogout - Style"
     echo "[02] - Hypridle |[07] - Waybar (Config)  | [12] - Fastfetch (Config)"
     echo "[03] - Hyprland |[08] - Waybar (Style)   | [13] - Fastfetch (Logo)"
-	echo "[04] - Hyprlock |[09] - Waypaper         |"
+	echo "[04] - Hyprlock |[09] - Waypaper         | [14] - Rofi"
 	echo "[05] - NVIM     |[10] - Wlogout - Layout |"
 	echo ""
 	read -p "Choose : " CHOOSE
@@ -48,6 +48,8 @@ do
 		git add fastfetch/.config/fastfetch/config.jsonc
 	elif [ $CHOOSE == 13 ]; then
 		git add fastfetch/.config/fastfetch/logo.png
+	elif [ $CHOOSE == 14 ]; then
+		git add rofi/.config/rofi/config.rasi
 	else
 		echo "That's not an option!"
         # Restore added files
