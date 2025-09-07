@@ -42,6 +42,13 @@ alias push='sh push.sh'
 # Add SSH key if not already added
 #ssh-add -l >/dev/null 2>&1 || ssh-add ~/.ssh/id_rsa
 
+
+# PYWAL
+# Import colorscheme from 'wal' asynchronously
+# & # Run the process in the background
+# ( ) # Hide shell job controll message
+(cat ~/.cache/wal/sequences &)
+
 # ----------------------------------------------
 # ENV VARIABLES
 # ----------------------------------------------
