@@ -18,9 +18,12 @@ I'll try to make this as detail as i can, feel free to use it yourself.
         - [Session Manager](#session-manager)
         - [Logout Menu](#logout-menu)
         - [Screen Lock](#sreen-lock)
+        - [Idle Session](#iddle-session)
         - [Notification Daemon](#notification-daemon)
         - [Color Palette Generator](#color-palette-generator)
         - [GTK Looks](#gtk-looks)
+        - [System Restore](#system-restore)
+        - [System Information](#system-information)
     - [Custom Scripts](#custom-scripts)
 
 
@@ -89,6 +92,9 @@ Usage :
 ### Screen Lock
 [Hyprlock](https://wiki.hypr.land/Hypr-Ecosystem/hyprlock/)
 
+### Idle Session
+[Hypridle](https://wiki.hypr.land/Hypr-Ecosystem/hypridle/)
+
 ### Notification Daemon
 [SwayNC](https://github.com/ErikReider/SwayNotificationCenter)
 
@@ -102,6 +108,9 @@ This tool generate color palette from current wallpaper and use it accross other
 ### System Restore
 [Timeshift](https://github.com/linuxmint/timeshift)  
 I use [typecraft's tutorial](https://youtu.be/V1wxgWU0j0E?si=VDn8snMtPCyONjyH) setup.
+
+### System Information
+[Fastfetch](https://github.com/fastfetch-cli/fastfetch)
 
 ## Custom Scripts
 
