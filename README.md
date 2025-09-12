@@ -13,6 +13,14 @@ I'll try to make this as detail as i can, feel free to use it yourself.
         - [Terminal Emulator](#terminal-emulator)
         - [Code Editor](#code-editor)
         - [Wallpaper](#wallpaper)
+        - [Screenshot](#screenshot)
+        - [Launcher](#launcher)
+        - [Session Manager](#session-manager)
+        - [Logout Menu](#logout-menu)
+        - [Screen Lock](#sreen-lock)
+        - [Notification Daemon](#notification-daemon)
+        - [Color Palette Generator](#color-palette-generator)
+        - [GTK Looks](#gtk-looks)
     - [Custom Scripts](#custom-scripts)
 
 
@@ -55,6 +63,7 @@ I choose [HYPRLAND](hypr.land) as my tiling window manager.
 
 ### Code Editor
 [Neovim](neovim.io)
+I use [Lazy.NVIM](https://lazy.folke.io) as plugins manager.
 
 ### Wallpaper
 [Waypaper](https://github.com/anufrievroman/waypaper) as my wallpaper picker and [swww](https://github.com/LGFae/swww) as the backend.
@@ -71,6 +80,29 @@ Usage :
 [Rofi](https://github.com/davatorium/rofi)  
 `SUPER_R` to run Rofi.
 
+### Session Manager
+[uwsm](https://github.com/Vladimir-csp/uwsm)
+
+### Logout Menu
+[Wlogout](https://github.com/ArtsyMacaw/wlogout), might replase with custom rofi scripts later.
+
+### Screen Lock
+[Hyprlock](https://wiki.hypr.land/Hypr-Ecosystem/hyprlock/)
+
+### Notification Daemon
+[SwayNC](https://github.com/ErikReider/SwayNotificationCenter)
+
+### Color Palette Generator
+[Pywal16](https://github.com/eylles/pywal16)  
+This tool generate color palette from current wallpaper and use it accross other programs.
+
+### GTK Looks
+[nwg-look](https://github.com/nwg-piotr/nwg-look)
+
+### System Restore
+[Timeshift](https://github.com/linuxmint/timeshift)  
+I use [typecraft's tutorial](https://youtu.be/V1wxgWU0j0E?si=VDn8snMtPCyONjyH) setup.
+
 ## Custom Scripts
 
 ### push.sh
@@ -80,3 +112,4 @@ Usage :
 2. Type a number that shows in the menu option to add your file
 3. Type a comment for that file
 4. Choose [y]es to add more files, i'll loop back to the menu, or choose [n]o to push it.
+5. Enter SSH key if required.
