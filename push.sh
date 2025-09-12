@@ -13,27 +13,27 @@ do
 	echo ""
 	echo "Which config you want to push to GitHub?"
 	echo ""
-    echo "[01] - Bash     |[06] - Push.sh          | [11] - Wlogout - Style"
-    echo "[02] - Hypridle |[07] - Waybar (Config)  | [12] - Fastfetch (Config)"
-    echo "[03] - Hyprland |[08] - Waybar (Style)   | [13] - Fastfetch (Logo)"
-	echo "[04] - Hyprlock |[09] - Waypaper         | [14] - Rofi"
-	echo "[05] - NVIM     |[10] - Wlogout - Layout |"
+    echo "[01] - README.md |[06] - Hyprlock         | [11] - Wlogout - Style"
+    echo "[02] - Push.sh   |[07] - Waybar (Config)  | [12] - Fastfetch (Config)"
+    echo "[03] - Bash      |[08] - Waybar (Style)   | [13] - Fastfetch (Logo)"
+	echo "[04] - Hyprland  |[09] - Waypaper         | [14] - Rofi"
+	echo "[05] - Hypridle  |[10] - Wlogout - Layout | [15] - NVIM"
 	echo ""
 	read -p "Choose : " CHOOSE
 
 	# Add a config file based on the choosen option
 	if [ $CHOOSE == 1 ]; then
-		git add bash/.bashrc
+		git add README.md
 	elif [ $CHOOSE == 2 ]; then
-		git add hypr/.config/hypr/hypridle.conf
-	elif [ $CHOOSE == 3 ]; then
-		git add hypr/.config/hypr/hyprland.conf
-	elif [ $CHOOSE == 4 ]; then
-		git add hypr/.config/hypr/hyprlock.conf
-	elif [ $CHOOSE == 5 ]; then
-		git add nvim/.config/nvim/
-	elif [ $CHOOSE == 6 ]; then
 		git add push.sh
+	elif [ $CHOOSE == 3 ]; then
+		git add bash/.bashrc
+	elif [ $CHOOSE == 4 ]; then
+		git add hypr/.config/hypr/hyprland.conf
+	elif [ $CHOOSE == 5 ]; then
+		git add hypr/.config/hypr/hypridle.conf
+	elif [ $CHOOSE == 6 ]; then
+		git add hypr/.config/hypr/hyprlock.conf
 	elif [ $CHOOSE == 7 ]; then
 		git add waybar/.config/waybar/config.jsonc
 	elif [ $CHOOSE == 8 ]; then
@@ -50,6 +50,8 @@ do
 		git add fastfetch/.config/fastfetch/logo.png
 	elif [ $CHOOSE == 14 ]; then
 		git add rofi/.config/rofi/config.rasi
+	elif [ $CHOOSE == 15 ]; then
+		git add nvim/.config/nvim/
 	else
 		echo "That's not an option!"
         # Restore added files
