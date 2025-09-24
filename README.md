@@ -30,7 +30,7 @@ I'll try to make this as detail as i can, feel free to use it yourself.
 
 # Directory Structure
 
-All files is saved in `~/.dotfiles` and using [GNU Stow](https://www.gnu.org/software/stow/) to distribute them to their default directory.  
+All config files is saved in `~/.dotfiles` and using [GNU Stow](https://www.gnu.org/software/stow/) to distribute them to their default directory.  
 Wallpapers is stored in `usr/share/Wallpapers` to make them accessible to other user.
 
 # Installed Programs
@@ -63,7 +63,8 @@ I choose [HYPRLAND](hypr.land) as my tiling window manager.
 [Bash](https://www.gnu.org/software/bash/)
 
 ### Status Bar
-[Waybar](https://github.com/Alexays/Waybar)  
+[Waybar](https://github.com/Alexays/Waybar)
+
 ![Waybar](preview/waybar.png)
 
 ### Terminal Emulator
@@ -71,11 +72,14 @@ I choose [HYPRLAND](hypr.land) as my tiling window manager.
 
 ### Code Editor
 [Neovim](neovim.io)
-I use [Lazy.NVIM](https://lazy.folke.io) as plugins manager.  
+
+I use [Lazy.NVIM](https://lazy.folke.io) as plugins manager. Also it's highly refference to this [YT tutorial](https://www.youtube.com/watch?v=46z_h4bNzjk&list=WL&index=1&t=123s)
+
 ![Neovim](preview/neovim.png)
 
 ### Wallpaper
-[Waypaper](https://github.com/anufrievroman/waypaper) as my wallpaper picker and [swww](https://github.com/LGFae/swww) as the backend.  
+[Waypaper](https://github.com/anufrievroman/waypaper) as my wallpaper picker and [swww](https://github.com/LGFae/swww) as the backend.
+
 ![Waypaper](preview/waypaper.png)
 
 ### Screenshot
@@ -117,13 +121,15 @@ This tool generate color palette from current wallpaper and use it accross other
 I use [typecraft's tutorial](https://youtu.be/V1wxgWU0j0E?si=VDn8snMtPCyONjyH) setup.
 
 ### System Information
-[Fastfetch](https://github.com/fastfetch-cli/fastfetch)  
+[Fastfetch](https://github.com/fastfetch-cli/fastfetch)
+
 ![Fastfetch](preview/fastfetch.png)
 
 ## Custom Scripts
 
 ### push.sh
-Automated git command to make add, comment and push proccess easier. It content all config files installed on my system.  
+Automated git command to make add, comment and push proccess easier. It content all config files installed on my system.
+
 ![push.sh](preview/push.sh.png)  
 Usage :  
 1. Use bash aliases `dotfiles` & `push` to go to dotfiles dir and run this script.
@@ -131,3 +137,5 @@ Usage :
 3. Type a comment for that file
 4. Choose [y]es to add more files, i'll loop back to the menu, or choose [n]o to push it.
 5. Enter SSH key if required.
+
+I create separeted repo for this [here](https://github.com/mrheriyansyah/git-automation.git).
