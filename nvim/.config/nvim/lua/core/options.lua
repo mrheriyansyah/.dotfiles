@@ -1,5 +1,6 @@
 vim.wo.number = true
 vim.o.relativenumber = true
+vim.opt.cursorline = true
 vim.o.clipboard = 'unnamedplus'
 vim.o.wrap = false
 vim.o.linebreak = true
