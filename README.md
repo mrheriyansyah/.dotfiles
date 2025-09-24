@@ -73,7 +73,7 @@ I choose [HYPRLAND](hypr.land) as my tiling window manager.
 ### Code Editor
 [Neovim](neovim.io)
 
-I use [Lazy.NVIM](https://lazy.folke.io) as plugins manager. Also it's highly refference to this [YT tutorial](https://www.youtube.com/watch?v=46z_h4bNzjk&list=WL&index=1&t=123s)
+I use [Lazy.NVIM](https://lazy.folke.io) as plugins manager. Also it's highly refference to [tony](https://www.youtube.com/watch?v=46z_h4bNzjk&list=WL&index=1&t=123s) & [Henry Misc](https://youtu.be/KYDG3AHgYEs?si=L_Rcp7PIGb51Dinp) tutorial video.
 
 ![Neovim](preview/neovim.png)
 
