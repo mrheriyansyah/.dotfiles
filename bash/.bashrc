@@ -15,6 +15,7 @@ PS1='[\u@\h \W]\$ '
 
 alias dotfiles='cd ~/.dotfiles'
 alias config='cd ~/.config'
+alias c='clear'
 
 # Edit config files
 alias hconf='nvim ~/.config/hypr/hyprland.conf'
