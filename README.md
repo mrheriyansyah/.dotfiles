@@ -6,7 +6,7 @@ I'll try to make this as detail as i can, feel free to use it yourself.
 # Table of Contents
 - [Directory Structure](#directory-structure)
 - [Installed Programs](#installed-programs)
-    - [Basic Tools](#basic-tools)
+    - [utility Apps](#utility-apps)
     - [Main Programs](#main-programs)
         - [Window Manager](#window-manager)
         - [Shell](#shell)
@@ -34,9 +34,9 @@ All config files is saved in `~/.dotfiles` and using [GNU Stow](https://www.gnu.
 Wallpapers is stored in `usr/share/Wallpapers` to make them accessible to other user.
 
 # Installed Programs
-## Basic tools
+## Utility Apps
 
-Here's a list of programs that i install as is (no custom config), and tools to run this setup properly :  
+Here's a list of programs that I install as is or minimun config, and tools to run this setup properly :  
 (nb: I need to find a better descriptive name for this).
 
 - [Nerd Font](https://www.nerdfonts.com/)
@@ -53,6 +53,12 @@ File browser, use `SUPER_E` to launch.
 
 - [Clipse](https://github.com/savedra1/clipse)
 CLipboard, use `SUPER_V` to launch.
+
+- [nmgui](https://github.com/s-adi-dev/nmgui)
+A simple, lightweight GTK4-based GUI for NetworkManager using nmcli.
+
+- [Warpinator](https://github.com/linuxmint/warpinator)
+Send and receive files across a local network.
 
 ## Main Programs
 
