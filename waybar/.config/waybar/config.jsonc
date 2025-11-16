@@ -74,7 +74,8 @@
         "format-disconnected": "<span color='#dc2626'>󱞐</span> Disconected",
 	    "format-disable": "<span color='#dc2626'>󰜺</span> Off",
         "tooltip-format-wifi": "{essid}",
-	"tooltip-format-ethernet": "{ipaddr}"
+	"tooltip-format-ethernet": "{ipaddr}",
+	"on-click": "nmgui"
     },
 
     "pulseaudio": {
