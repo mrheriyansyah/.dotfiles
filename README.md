@@ -60,6 +60,9 @@ A simple, lightweight GTK4-based GUI for NetworkManager using nmcli.
 - [Warpinator](https://github.com/linuxmint/warpinator)
 Send and receive files across a local network.
 
+- [ncdu](https://github.com/rofl0r/ncdu)
+CLI tool for analyzing disk space usage.
+
 ## Main Programs
 
 ### Window Manager
