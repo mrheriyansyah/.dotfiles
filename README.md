@@ -63,6 +63,15 @@ Send and receive files across a local network.
 - [ncdu](https://github.com/rofl0r/ncdu)
 CLI tool for analyzing disk space usage.
 
+- [TLP](https://linrunner.de/tlp/index.html)
+Feature-rich utility for Linux, saving laptop battery power without the need to delve deeper into technical details.
+I also installing [tlp-rdw](https://linrunner.de/tlp/settings/rdw.html).
+As recommended by [Michael Horn](https://www.youtube.com/watch?v=GDdGK8Z_qzs), I edit `/etc/tlp.conf` to disable bluetooth on startup :
+```
+DEVICES_TO_DISABLE_ON_STARTUP="bluetooth"
+
+```
+
 ## Main Programs
 
 ### Window Manager
