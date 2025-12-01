@@ -71,6 +71,7 @@ As recommended by [Michael Horn](https://www.youtube.com/watch?v=GDdGK8Z_qzs), I
 DEVICES_TO_DISABLE_ON_STARTUP="bluetooth"
 
 ```
+[tlpui](https://github.com/d4nj1/TLPUI?tab=readme-ov-file) for the front end.
 
 ## Main Programs
 
