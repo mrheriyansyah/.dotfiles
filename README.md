@@ -97,9 +97,14 @@ I use [Lazy.NVIM](https://lazy.folke.io) as plugins manager. Also it's highly re
 ![Neovim](preview/neovim.png)
 
 ### Wallpaper
-[Waypaper](https://github.com/anufrievroman/waypaper) as my wallpaper picker and [swww](https://github.com/LGFae/swww) as the backend.
+[Waypaper](https://github.com/anufrievroman/waypaper) as my wallpaper picker and [awww](https://codeberg.org/LGFae/awww) (previously swww) as the backend.
+
 
 ![Waypaper](preview/waypaper.png)
+
+Since project rename, I need to run this to say waypaper that awww is swww :
+
+`sudo ln -s $(which awww) /usr/local/bin/swww`
 
 ### Screenshot
 [Hyprshot](https://github.com/Gustash/Hyprshot)  
